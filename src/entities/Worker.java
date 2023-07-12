@@ -16,7 +16,7 @@ public class Worker {
     private Department department;
     //Composição tem-muitos (Não entra no construtor)
     private List<HourContract> contracts = new ArrayList<>();
-    //Construtores
+    //Instanciada a lista vazia
     public Worker(){
     }
 
@@ -63,7 +63,6 @@ public class Worker {
         return contracts;
     }
 
-    //Métodos
     public void addContract(HourContract contract){
         contracts.add(contract);
     }
